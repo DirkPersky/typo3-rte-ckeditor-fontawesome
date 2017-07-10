@@ -1,0 +1,3 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Default.yaml" } # Import the image plugin configuration
+    - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/Plugin.yaml" }

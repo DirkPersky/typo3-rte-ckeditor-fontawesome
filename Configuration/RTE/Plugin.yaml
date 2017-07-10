@@ -1,0 +1,20 @@
+# Register wordcount plugin for ckeditor
+editor:
+  externalPlugins:
+    ckeditor_fa:
+      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa/plugin.js"
+
+  allowedContent: true
+
+  #contentsCss:
+  #    - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
+  #    - "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa/font-awesome/css/font-awesome.min.css"
+
+  config:
+    coreStyles_italic:
+      element : 'i'
+      overrides : 'span'
+
+    stylesSet:
+      # block level styles
+      - { name: "Font-Awesome: Ajust", element: ['span', 'i', 'em'], attributes: { 'class': 'fa fa-adjust' }}

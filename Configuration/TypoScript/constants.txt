@@ -1,0 +1,7 @@
+plugin.tx_ckeditor_fontawesome {
+    # cat=ckeditor_fontawesome; type=boolean; label=Include Fontawesome CSSS (Default is yes)
+	loadCSS = 1
+
+	# cat=ckeditor_fontawesome; type=string; label=Path to CSS-File
+    css = https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+}
