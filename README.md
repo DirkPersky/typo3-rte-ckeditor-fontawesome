@@ -2,10 +2,10 @@
 This repository provides the add-on "Fontawesome" as a extension for TYPO3.
 
 ## Typo3 Constants:
-**Disable CDN Integration in Frontend**
+**Disable CDN Integration in Frontend**<br/>
 plugin.tx_ckeditor_fontawesome.loadCSS = 
 
-**Set alternativ CDN reference File** 
+**Set alternativ CDN reference File**<br/>
 plugin.tx_ckeditor_fontawesome.css = 
 
 ## ToDo:
