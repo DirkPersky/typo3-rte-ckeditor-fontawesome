@@ -1,0 +1,88 @@
+.cke_reset_all .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  cursor: pointer;
+}
+.cke_reset_all .fa:before {
+  color: inherit;
+}
+
+.ckeditor-fa-wrap {
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  color: #555;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#ckeditor-fa-icons{
+  min-width: 100%;
+  height: 300px;
+  overflow: auto;
+
+  margin: -24px -10px -10px -10px;
+  width: auto;
+}
+
+#ckeditor-fa-icons-select {
+  white-space: normal;
+  text-align: center;
+}
+
+#ckeditor-fa-icons-select .page-header {
+  font-size: 2rem;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+
+  background-color: #1fa67a;
+  color: #fff;
+  text-shadow: 1px 1px 0px #333;
+}
+
+#ckeditor-fa-icons-select .fontawesome-icon-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover {
+  display: block;
+  max-width: 25%;
+  flex: 0 0 25%;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  min-height: 100%;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a.active,
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a:hover{
+  background-color: #1fa67a;
+  color: white;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a i {
+  text-align: center;
+  font-size: 1.7rem;
+  display: block;
+  padding-bottom: 7px;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a span.sr-only {
+  display: none;
+}
+#ckeditor-fa-icons-select * {
+  box-sizing: border-box;
+}
