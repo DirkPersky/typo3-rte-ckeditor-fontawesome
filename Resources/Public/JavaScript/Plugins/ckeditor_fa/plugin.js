@@ -1,5 +1,6 @@
 (function ($) {
     CKEDITOR.dtd.$removeEmpty.span = 0;
+    CKEDITOR.dtd.$removeEmpty.em = 0;
     CKEDITOR.dtd.$removeEmpty.i = 0;
 
     CKEDITOR.plugins.add('ckeditor_fa', {
