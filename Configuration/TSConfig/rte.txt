@@ -1,1 +1,1 @@
-RTE.default.preset = minimal
+#RTE.default.preset = minimal
