@@ -2,7 +2,7 @@
 editor:
   externalPlugins:
     ckeditor_fa:
-      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa/plugin.js"
+      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa/plugin.js?v=8.7.6"
 
   allowedContent: true
 
