@@ -803,4 +803,18 @@ editor:
       - { name: "Font-Awesome: fa-superpowers", element: ['i','em'], attributes: { 'class': 'fa fa-superpowers' }}
       - { name: "Font-Awesome: fa-wpexplorer", element: ['i','em'], attributes: { 'class': 'fa fa-wpexplorer' }}
       - { name: "Font-Awesome: fa-meetup", element: ['i','em'], attributes: { 'class': 'fa fa-meetup' }}
-
+      - { name: "Font-Awesome: fa-lg", element: ['i','em'], attributes: { 'class': 'fa-lg' }}
+      - { name: "Font-Awesome: fa-2x", element: ['i','em'], attributes: { 'class': 'fa-2x' }}
+      - { name: "Font-Awesome: fa-3x", element: ['i','em'], attributes: { 'class': 'fa-3x' }}
+      - { name: "Font-Awesome: fa-4x", element: ['i','em'], attributes: { 'class': 'fa-4x' }}
+      - { name: "Font-Awesome: fa-5x", element: ['i','em'], attributes: { 'class': 'fa-5x' }}
+      - { name: "Font-Awesome: fa-border", element: ['i','em'], attributes: { 'class': 'fa-border' }}
+      - { name: "Font-Awesome: fa-spin", element: ['i','em'], attributes: { 'class': 'fa-spin' }}
+      - { name: "Font-Awesome: fa-fw", element: ['i','em'], attributes: { 'class': 'fa-fw' }}
+      - { name: "Font-Awesome: fa-rotate-90", element: ['i','em'], attributes: { 'class': 'fa-rotate-90' }}
+      - { name: "Font-Awesome: fa-rotate-180", element: ['i','em'], attributes: { 'class': 'fa-rotate-180' }}
+      - { name: "Font-Awesome: fa-rotate-270", element: ['i','em'], attributes: { 'class': 'fa-rotate-270' }}
+      - { name: "Font-Awesome: fa-flip-horizontal", element: ['i','em'], attributes: { 'class': 'fa-flip-horizontal' }}
+      - { name: "Font-Awesome: fa-flip-vertical", element: ['i','em'], attributes: { 'class': 'fa-flip-vertical' }}
+      - { name: "Font-Awesome: fa-pull-left", element: ['i','em'], attributes: { 'class': 'fa-pull-left' }}
+      - { name: "Font-Awesome: fa-pull-right", element: ['i','em'], attributes: { 'class': 'fa-pull-right' }}

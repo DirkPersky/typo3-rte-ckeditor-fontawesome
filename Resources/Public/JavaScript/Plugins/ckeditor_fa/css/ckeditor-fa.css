@@ -86,3 +86,27 @@
 #ckeditor-fa-icons-select * {
   box-sizing: border-box;
 }
+
+#ckeditor-fa-icons-select .fontawesome-icon-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5px 10px 5px;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-options .col {
+  width: 33.3333%;
+  padding: 0 5px;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-options .col label {
+  display: block;
+  width: 100%;
+}
+#ckeditor-fa-icons-select .fa-fw {
+   width: 1.28571429em;
+   text-align: center;
+ }
+#ckeditor-fa-icons-select .fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}

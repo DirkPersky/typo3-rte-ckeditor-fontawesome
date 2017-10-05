@@ -23,6 +23,7 @@ function ckeditor_fa_click(el) {
     }
     var icons = ckeditorFaGetIcons();
     var ckeditorFaIcons = icons;
+
     return {
       title: 'FontAwesome Icons',
       minWidth: 400,
@@ -46,6 +47,34 @@ function ckeditor_fa_click(el) {
           ]
         },
       ],
+      onLoad: function(){
+        var faSize =  $('input[name="fa-size[]"]');
+        faSize.on('change',function(e){
+            var prop = $(e.delegateTarget).prop('checked');
+
+            faSize.prop('checked', false);
+
+            $(e.delegateTarget).prop('checked', prop);
+        });
+
+        var faRotate =  $('input[name="fa-rotate[]"]');
+        faRotate.on('change',function(e){
+            var prop = $(e.delegateTarget).prop('checked');
+
+            faRotate.prop('checked', false);
+
+            $(e.delegateTarget).prop('checked', prop);
+        });
+
+        var faPull =  $('input[name="fa-pull[]"]');
+        faPull.on('change',function(e){
+            var prop = $(e.delegateTarget).prop('checked');
+
+            faPull.prop('checked', false);
+
+            $(e.delegateTarget).prop('checked', prop);
+        });
+      },
       onOk: function () {
         var icons = document.getElementById('ckeditor-fa-icons-select');
         var activeIcon = icons.getElementsByClassName('active');
@@ -54,7 +83,21 @@ function ckeditor_fa_click(el) {
         }
         var dialog = this;
         var icon = editor.document.createElement('i');
-        icon.setAttribute('class', 'fa fa-' + dialog.getValueOf('font-awesome', 'faicon'));
+        var _checkClasses = [
+            'fa',
+            'fa-' + dialog.getValueOf('font-awesome', 'faicon')
+        ];
+
+        $('input[name="fa-size[]"]:checked,' +
+            'input[name="fa-rotate[]"]:checked,' +
+            'input[name="fa-pull[]"]:checked,' +
+            'input[name="fa-border"]:checked,' +
+            'input[name="fa-spin"]:checked,' +
+            'input[name="fa-fw"]:checked').each(function(index, el){
+            _checkClasses.push( $(el).val() );
+        });
+
+        icon.setAttribute('class', _checkClasses.join(' '));
         editor.insertElement(icon);
       }
     };
