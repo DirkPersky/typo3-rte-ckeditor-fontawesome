@@ -15,8 +15,8 @@
         toolbar: 'insert',
         icon: this.path + 'icons/ckeditor-fa.png',
       });
-      CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=8.7.6');
-      CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=8.7.6');
+      CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=8.7.7');
+      CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=8.7.7');
 
       editor.addContentsCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     }

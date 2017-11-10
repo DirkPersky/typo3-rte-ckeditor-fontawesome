@@ -58,6 +58,13 @@
   display: block;
   max-width: 25%;
   flex: 0 0 25%;
+
+  transition: all .4s ease-in-out;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover.off {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 #ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a {
   display: block;
@@ -109,4 +116,22 @@
   padding: .2em .25em .15em;
   border: solid 0.08em #eeeeee;
   border-radius: .1em;
+}
+#fontawesome-search {
+  border-top: 1px solid #333;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 10px;
+}
+#fontawesome-search input[type="text"] {
+  width: 100%;
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  outline: none
 }

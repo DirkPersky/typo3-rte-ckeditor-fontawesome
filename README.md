@@ -9,5 +9,4 @@ plugin.tx_ckeditor_fontawesome.loadCSS =
 plugin.tx_ckeditor_fontawesome.css = 
 
 ## ToDo:
-- Add a search option
 - Add FA-Icon in Content Headline Definition.

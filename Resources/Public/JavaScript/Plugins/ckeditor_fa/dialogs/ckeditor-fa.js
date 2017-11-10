@@ -8,12 +8,46 @@ function ckeditor_fa_click(el) {
   // Set Active Class
   _el.addClass('active');
 }
+var _searchTimer;
+/**
+ * Search Handling
+ */
+function searchFontawesomeIcon(el) {
+    var _el = TYPO3.jQuery(el),
+        _val = _el.val();
+
+    clearTimeout(_searchTimer);
+    _searchTimer = setTimeout(function(){
+        if(!_val || _val.length == 0){
+            TYPO3.jQuery('.fa-hover').removeClass('off');
+            TYPO3.jQuery('#fontawesome-icon-body > section').show();
+            return true;
+        }
+        TYPO3.jQuery('#fontawesome-icon-body .fa-hover > a').each(function(i, element){
+            var _temp = TYPO3.jQuery(element);
+            if(element.className.indexOf(_val) >= 0) {
+                _temp.parent().removeClass('off');
+            } else {
+                _temp.parent().addClass('off');
+            }
+        });
+
+        TYPO3.jQuery('#fontawesome-icon-body > section').each(function(i, section) {
+            section = TYPO3.jQuery(section);
+            if(section.find('.fa-hover').length == section.find('.fa-hover.off').length) {
+                section.hide();
+            } else {
+                section.show();
+            }
+        });
+    }, 400);
+  }
 (function ($) {
 
   CKEDITOR.dialog.add('ckeditorFaDialog', function (editor) {
     function ckeditorFaGetIcons() {
       $.ajaxSetup({async: false});
-      var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa')+'dialogs/index.html?v=8.7.6');
+      var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa')+'dialogs/index.html?v=8.7.7');
       $.ajaxSetup({async: true});
       if (icons.status == 200) {
         return icons.responseText;
