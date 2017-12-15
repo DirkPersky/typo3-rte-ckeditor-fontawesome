@@ -10,3 +10,4 @@ plugin.tx_ckeditor_fontawesome.css =
 
 ## ToDo:
 - Add FA-Icon in Content Headline Definition.
+- Update to FA5
