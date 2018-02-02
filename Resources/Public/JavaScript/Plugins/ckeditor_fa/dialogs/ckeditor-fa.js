@@ -4,7 +4,6 @@ function ckeditor_fa_click(el) {
   TYPO3.jQuery('#ckeditor-fa-icons-select a').removeClass('active');
   // Set Vale
   TYPO3.jQuery('.fontawesomeClass input').val(_el.attr('class'));
-  // document.getElementsByClassName('fontawesomeClass')[0].getElementsByTagName('input')[0].value = _el.attr('class');
   // Set Active Class
   _el.addClass('active');
 }
@@ -47,7 +46,7 @@ function searchFontawesomeIcon(el) {
   CKEDITOR.dialog.add('ckeditorFaDialog', function (editor) {
     function ckeditorFaGetIcons() {
       $.ajaxSetup({async: false});
-      var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa')+'dialogs/index.html?v=8.7.7');
+      var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa')+'dialogs/index.html?v=8.7.8');
       $.ajaxSetup({async: true});
       if (icons.status == 200) {
         return icons.responseText;
@@ -132,6 +131,8 @@ function searchFontawesomeIcon(el) {
         });
 
         icon.setAttribute('class', _checkClasses.join(' '));
+        icon.setText(' ');
+
         editor.insertElement(icon);
       }
     };
