@@ -113,6 +113,10 @@
   padding: 7px 10px;
   text-align: center;
 }
+#ckeditor-fa-icons-select .fontawesome-icon-options .fa-button.fa-button-small {
+  margin-top: 2px;
+}
+
 #ckeditor-fa-icons-select .fontawesome-icon-options input.hidden {
   opacity: 0;
   visibility: hidden;
@@ -137,6 +141,7 @@
 }
 #fontawesome-search {
   border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 
   display: flex;
   flex-wrap: nowrap;
