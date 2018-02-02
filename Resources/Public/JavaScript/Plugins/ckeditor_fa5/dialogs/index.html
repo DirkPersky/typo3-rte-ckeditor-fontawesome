@@ -1,4 +1,6 @@
 <div id="ckeditor-fa-icons-select">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
     <div id="fontawesome-search">
         <i class="fa fa-search" aria-hidden="true"></i>
         <input type="text" name="fontawesome-search" placeholder="search for icon came" onkeyup="searchFontawesomeIcon(this)"/>
@@ -24,97 +26,120 @@
                 </label>
             </div>
         </div>
-        <h2 class="page-header">Icon Options</h2>
-        <div class="row fontawesome-icon-options">
+        <a class="page-header" href="#fa-options">
+            Icon Options
+            <i class="fas fa-angle-up"></i>
+            <i class="fas fa-angle-down"></i>
+        </a>
+        <div class="row fontawesome-icon-options" id="fa-options" >
             <div class="col">
-                <input type="radio" name="fa-size[]" value="fa-xs" id="cke-fa-xs" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-xs" id="cke-fa-xs" class="hidden" />
                 <label for="cke-fa-xs" class="fa-button">
                     fa-xs
                 </label>
-                <input type="radio" name="fa-size[]" value="fa-sm" id="cke-fa-sm" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-sm" id="cke-fa-sm" class="hidden" />
                 <label for="cke-fa-sm" class="fa-button fa-button-small">
                     fa-sm
                 </label>
-                <input type="radio" name="fa-size[]" value="fa-lg" id="cke-fa-lg" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-lg" id="cke-fa-lg" class="hidden" />
                 <label for="cke-fa-lg" class="fa-button fa-button-small">
                     fa-lg
                 </label>
-                <input type="radio" name="fa-size[]" value="fa-2x" id="cke-fa-2x" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-2x" id="cke-fa-2x" class="hidden" />
                 <label for="cke-fa-2x" class="fa-button fa-button-small">
                     fa-2x
                 </label>
-                <input type="radio" name="fa-size[]" value="fa-3x" id="cke-fa-3x" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-3x" id="cke-fa-3x" class="hidden" />
                 <label for="cke-fa-3x" class="fa-button fa-button-small">
                     fa-3x
                 </label>
-                <input type="radio" name="fa-size[]" value="fa-5x" id="cke-fa-5x" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-5x" id="cke-fa-5x" class="hidden" />
                 <label for="cke-fa-5x" class="fa-button fa-button-small">
                     fa-5x
                 </label>
-                <input type="radio" name="fa-size[]" value="fa-7x" id="cke-fa-7x" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-7x" id="cke-fa-7x" class="hidden" />
                 <label for="cke-fa-7x" class="fa-button fa-button-small">
                     fa-7x
                 </label>
-                <input type="radio" name="fa-size[]" value="fa-3x" id="cke-fa-10x" class="hidden" />
+                <input type="checkbox" name="fa-size[]" value="fa-3x" id="cke-fa-10x" class="hidden" />
                 <label for="cke-fa-10x" class="fa-button fa-button-small">
                     fa-10x
                 </label>
             </div>
-            <!--<div class="col">-->
-                <!--<label for="cke-fa-rotate-90">-->
-                    <!--<input type="checkbox" name="fa-rotate[]" value="fa-rotate-90" id="cke-fa-rotate-90"/>-->
-                    <!--<i class="fa fa-shield fa-fw" style="transform: rotate(90deg);"></i> fa-rotate-90-->
-                <!--</label>-->
-                <!--<label for="cke-fa-rotate-180">-->
-                    <!--<input type="checkbox" name="fa-rotate[]" value="fa-rotate-180" id="cke-fa-rotate-180"/>-->
-                    <!--<i class="fa fa-shield fa-fw" style="transform: rotate(180deg);"></i> fa-rotate-180-->
-                <!--</label>-->
-                <!--<label for="cke-fa-rotate-270">-->
-                    <!--<input type="checkbox" name="fa-rotate[]" value="fa-rotate-270" id="cke-fa-rotate-270"/>-->
-                    <!--<i class="fa fa-shield fa-fw" style="transform: rotate(270deg);"></i> fa-rotate-270-->
-                <!--</label>-->
-                <!--<label for="cke-fa-flip-horizontal">-->
-                    <!--<input type="checkbox" name="fa-rotate[]" value="fa-flip-horizontal" id="cke-fa-flip-horizontal"/>-->
-                    <!--<i class="fa fa-shield fa-fw" style="transform: scale(-1, 1);"></i> fa-flip-horizontal-->
-                <!--</label>-->
-                <!--<label for="cke-fa-flip-vertical">-->
-                    <!--<input type="checkbox" name="fa-rotate[]" value="fa-flip-vertical" id="cke-fa-flip-vertical"/>-->
-                    <!--<i class="fa fa-shield fa-fw" style="transform: scale(1, -1);"></i> fa-flip-vertical-->
-                <!--</label>-->
-            <!--</div>-->
-            <!--<div class="col">-->
-                <!--<label for="cke-fa-border">-->
-                    <!--<input type="checkbox" name="fa-border" value="fa-border" id="cke-fa-border" />-->
-                    <!--<i class="fa fa-shield fa-border fa-fw"></i> fa-border-->
-                <!--</label>-->
-                <!--<label for="cke-fa-spin">-->
-                    <!--<input type="checkbox" name="fa-spin" value="fa-spin" id="cke-fa-spin" />-->
-                    <!--<i class="fa fa-spinner fa-spin fa-fw"></i> fa-spin-->
-                <!--</label>-->
-                <!--<label for="cke-fa-fw">-->
-                    <!--<input type="checkbox" name="fa-fw" value="fa-fw" id="cke-fa-fw" />-->
-                    <!--<i class="fa fa-shield fa-fw"></i> fa-fw-->
-                <!--</label>-->
-
-                <!--<label for="cke-fa-pull-left">-->
-                    <!--<input type="checkbox" name="fa-pull[]" value="fa-pull-left" id="cke-fa-pull-left" />-->
-                    <!--fa-pull-left-->
-                <!--</label>-->
-                <!--<label for="cke-fa-pull-right">-->
-                    <!--<input type="checkbox" name="fa-pull[]" value="fa-pull-right" id="cke-fa-pull-right" />-->
-                    <!--fa-pull-right-->
-                <!--</label>-->
-            <!--</div>-->
+            <div class="col">
+                <input type="checkbox" name="fa-rotate[]" value="fa-rotate-90"  id="cke-fa-rotate-90" class="hidden" />
+                <label for="cke-fa-rotate-90" class="fa-button">
+                    <i class="fas fa-shield-alt fa-fw fa-rotate-90"></i> fa-rotate-90
+                </label>
+                <input type="checkbox" name="fa-rotate[]" value="fa-rotate-180"  id="cke-fa-rotate-180" class="hidden" />
+                <label for="cke-fa-rotate-180" class="fa-button fa-button-small">
+                    <i class="fas fa-shield-alt fa-fw fa-rotate-180"></i> fa-rotate-180
+                </label>
+                <input type="checkbox" name="fa-rotate[]" value="fa-rotate-270"  id="cke-fa-rotate-270" class="hidden" />
+                <label for="cke-fa-rotate-270" class="fa-button fa-button-small">
+                    <i class="fas fa-shield-alt fa-fw fa-rotate-270"></i> fa-rotate-270
+                </label>
+                <input type="checkbox" name="fa-rotate[]" value="fa-flip-horizontal"  id="cke-fa-flip-horizontal" class="hidden" />
+                <label for="cke-fa-flip-horizontal" class="fa-button fa-button-small">
+                    <i class="fas fa-shield-alt fa-fw fa-flip-horizontal"></i> fa-flip-horizontal
+                </label>
+                <input type="checkbox" name="fa-rotate[]" value="fa-flip-vertical"  id="cke-fa-flip-vertical" class="hidden" />
+                <label for="cke-fa-flip-vertical" class="fa-button fa-button-small">
+                    <i class="fas fa-shield-alt fa-fw fa-flip-vertical"></i> fa-flip-vertical
+                </label>
+            </div>
+            <div class="col">
+                <input type="checkbox"  name="fa-border" value="fa-border" id="cke-fa-border" class="hidden" />
+                <label for="cke-fa-border" class="fa-button">
+                    <i class="fas fa-shield-alt fa-border fa-fw"></i> fa-border
+                </label>
+                <input type="checkbox" name="fa-spin" value="fa-spin" id="cke-fa-spin" class="hidden" />
+                <label for="cke-fa-spin" class="fa-button fa-button-small">
+                    <i class="fas fa-spinner fa-spin fa-fw"></i> fa-spin
+                </label>
+                <input type="checkbox" name="fa-fw" value="fa-fw" id="cke-fa-fw" class="hidden" />
+                <label for="cke-fa-fw" class="fa-button fa-button-small">
+                    <i class="fas fa-shield-alt fa-fw"></i> fa-fw
+                </label>
+                <input type="checkbox" name="fa-pull[]" value="fa-pull-left" id="cke-fa-pull-left" class="hidden" />
+                <label for="cke-fa-pull-left" class="fa-button">
+                    fa-pull-left
+                </label>
+                <input type="checkbox" name="fa-pull[]" value="fa-pull-right" id="cke-fa-pull-right" class="hidden" />
+                <label for="cke-fa-pull-right" class="fa-button fa-button-small">
+                    fa-pull-right
+                </label>
+            </div>
         </div>
     </section>
-    <div id="fontawesome-icon-body">
+    <div id="fontawesome-icon-body-regular" class="fontawesome-icon-body">
         <section id="new">
-            <h2 class="page-header">41 New Icons in 4.7</h2>
+            <h2 class="page-header">Regulär</h2>
             <div class="row fontawesome-icon-list">
 
                 <div class="fa-hover "><a onClick="ckeditor_fa_click(this); return false;" class="address-book-o"><i class="fa fa-address-book-o" aria-hidden="true"></i> <span class="sr-only">Example of </span>address-book-o</a></div>
+                <div class="fa-hover "><a onClick="ckeditor_fa_click(this); return false;" class="address-book-o"><i class="fa fa-address-book-o" aria-hidden="true"></i> <span class="sr-only">Example of </span>address-book-o</a></div>
             </div>
+        </section>
+    </div>
+    <div id="fontawesome-icon-body-solid" class="fontawesome-icon-body">
+        <section id="new">
+            <h2 class="page-header">Solid</h2>
+            <div class="row fontawesome-icon-list">
 
+                <div class="fa-hover "><a onClick="ckeditor_fa_click(this); return false;" class="address-book-o"><i class="fa fa-address-book-o" aria-hidden="true"></i> <span class="sr-only">Example of </span>address-book-o</a></div>
+                <div class="fa-hover "><a onClick="ckeditor_fa_click(this); return false;" class="address-book-o"><i class="fa fa-address-book-o" aria-hidden="true"></i> <span class="sr-only">Example of </span>address-book-o</a></div>
+            </div>
+        </section>
+    </div>
+    <div id="fontawesome-icon-body-brand" class="fontawesome-icon-body">
+        <section id="new">
+            <h2 class="page-header">Brands</h2>
+            <div class="row fontawesome-icon-list">
+
+                <div class="fa-hover "><a onClick="ckeditor_fa_click(this); return false;" class="address-book-o"><i class="fa fa-address-book-o" aria-hidden="true"></i> <span class="sr-only">Example of </span>address-book-o</a></div>
+                <div class="fa-hover "><a onClick="ckeditor_fa_click(this); return false;" class="address-book-o"><i class="fa fa-address-book-o" aria-hidden="true"></i> <span class="sr-only">Example of </span>address-book-o</a></div>
+            </div>
         </section>
     </div>
 </div>

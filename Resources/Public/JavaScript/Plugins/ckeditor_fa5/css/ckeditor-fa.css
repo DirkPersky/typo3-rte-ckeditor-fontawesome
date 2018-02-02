@@ -1,14 +1,13 @@
-.cke_reset_all .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  cursor: pointer;
-}
-.cke_reset_all .fa:before {
+.cke_reset_all .fas:before,
+.cke_reset_all .fab:before,
+.cke_reset_all .fal:before,
+.cke_reset_all .far:before,
+.cke_reset_all .fa:before,
+.cke_reset_all .fa,
+.cke_reset_all .fab,
+.cke_reset_all .fal,
+.cke_reset_all .far,
+.cke_reset_all .fas {
   color: inherit;
 }
 
@@ -22,7 +21,12 @@
   cursor: pointer;
   text-align: center;
 }
-
+.fontawesome-icon-body {
+  display: none;
+}
+.fontawesome-icon-body.in {
+  display: block;
+}
 #ckeditor-fa-icons{
   min-width: 100%;
   height: 300px;
@@ -42,10 +46,49 @@
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
   padding: 10px;
+  display: block;
 
   background-color: #1fa67a;
   color: #fff;
   text-shadow: 1px 1px 0px #333;
+  position: relative;
+}
+#ckeditor-fa-icons-select a.page-header {
+  cursor: pointer;
+}
+#ckeditor-fa-icons-select a.page-header {
+  margin-bottom: 10px;
+}
+#ckeditor-fa-icons-select a.page-header.in {
+  margin-bottom: 0;
+}
+#ckeditor-fa-icons-select .page-header .fa-angle-down,
+#ckeditor-fa-icons-select .page-header .fa-angle-up {
+  position: absolute;
+  right: 10px;
+
+  font-size: 20px;
+  color: white;
+  top: 50%;
+  margin-top: -10px;
+  line-height: 1;
+}
+#ckeditor-fa-icons-select .page-header.in .fa-angle-down{
+  display: none;
+}
+#ckeditor-fa-icons-select .page-header.in .fa-angle-up {
+  display: block;
+}
+
+#ckeditor-fa-icons-select #fa-options {
+  display: none;
+}
+
+#ckeditor-fa-icons-select #fa-options.in {
+  display: flex;
+}
+#ckeditor-fa-icons-select .page-header .fa-angle-up {
+  display: none;
 }
 
 #ckeditor-fa-icons-select .fontawesome-icon-list {
@@ -113,6 +156,7 @@
   padding: 7px 10px;
   text-align: center;
 }
+
 #ckeditor-fa-icons-select .fontawesome-icon-options .fa-button.fa-button-small {
   margin-top: 2px;
 }
