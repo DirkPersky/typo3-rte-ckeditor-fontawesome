@@ -46,7 +46,7 @@ function searchFontawesomeIcon(el) {
   CKEDITOR.dialog.add('ckeditorFaDialog', function (editor) {
     function ckeditorFaGetIcons() {
       $.ajaxSetup({async: false});
-      var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa')+'dialogs/index.html?v=8.7.8');
+      var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa')+'dialogs/index.html?v=8.8.0');
       $.ajaxSetup({async: true});
       if (icons.status == 200) {
         return icons.responseText;

@@ -50,7 +50,7 @@ function searchFontawesomeIcon(el) {
     CKEDITOR.dialog.add('ckeditorFaDialog', function (editor) {
         function ckeditorFaGetIcons() {
             $.ajaxSetup({async: false});
-            var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa5') + 'dialogs/index.html?v=8.7.8');
+            var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa5') + 'dialogs/index.html?v=8.8.0');
             $.ajaxSetup({async: true});
             if (icons.status == 200) {
                 return icons.responseText;
@@ -140,7 +140,7 @@ function searchFontawesomeIcon(el) {
                 var dialog = this;
                 var icon = editor.document.createElement('i');
                 var _checkClasses = [
-                    'fa',
+                    $('input[name="fa-type[]"]:checked').val(),
                     'fa-' + dialog.getValueOf('font-awesome', 'faicon')
                 ];
 

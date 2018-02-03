@@ -4,6 +4,4 @@ plugin.tx_ckeditor_fontawesome {
 
 	# cat=ckeditor_fontawesome; type=string; label=Path to CSS-File
     css = https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-
-    #css = https://use.fontawesome.com/releases/v5.0.6/css/all.css
 }
