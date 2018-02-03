@@ -7,7 +7,7 @@ For the default template ot the CKE-Editor
 ```
 RTE.default.preset = fa5
 ```
-For the Full template of CKE-Editor
+For the full template of CKE-Editor
 ```
 RTE.default.preset = fullfa5
 ```
