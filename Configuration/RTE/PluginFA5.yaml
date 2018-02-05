@@ -13,4 +13,3 @@ editor:
 
     stylesSet:
       # block level styles
-      - { name: "Font-Awesome: fa-glass", element: ['i','em'], attributes: { 'class': 'fa fa-glass' }}
