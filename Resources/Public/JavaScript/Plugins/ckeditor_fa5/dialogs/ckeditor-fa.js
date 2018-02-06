@@ -1,3 +1,8 @@
+// Typo3 9.1 map jQuery back
+if(typeof TYPO3.jQuery == 'undefined') {
+    TYPO3.jQuery = jQuery;
+}
+// Click Handler
 function ckeditor_fa_click(el) {
     var _el = TYPO3.jQuery(el);
     // remove Active Class
@@ -7,10 +12,8 @@ function ckeditor_fa_click(el) {
     // Set Active Class
     _el.addClass('active');
 }
-
-
+// SearchTimer
 var _searchTimer;
-
 /**
  * Search Handling
  */
