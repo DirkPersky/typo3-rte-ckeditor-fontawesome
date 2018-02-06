@@ -82,6 +82,7 @@
 
 #ckeditor-fa-icons-select #fa-options {
   display: none;
+  border-bottom: 1px solid #333;
 }
 
 #ckeditor-fa-icons-select #fa-options.in {
