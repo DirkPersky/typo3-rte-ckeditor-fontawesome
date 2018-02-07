@@ -2,7 +2,7 @@
 This repository provides the add-on "Fontawesome" as a extension for TYPO3.
 
 ## TSConfig
-### Switch back to Fontawesome 5 (v.8.8.0-rc1)
+### Switch back to Fontawesome 4
 For the default template ot the CKE-Editor
 ```
 RTE.default.preset = defaultFA4
@@ -22,9 +22,9 @@ Set alternativ CDN reference File
 plugin.tx_ckeditor_fontawesome.css = {$path}
 ```
 
-### Switch back Fontawesome 4 (v.8.8.0-rc1)
+### Switch back Fontawesome 4
 ```
-# Include Fontawesome 5 from CDN
+# Include Fontawesome 4 from CDN
 plugin.tx_ckeditor_fontawesome.css = https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
 ```
 
