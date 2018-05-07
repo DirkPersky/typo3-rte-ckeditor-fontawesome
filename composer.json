@@ -1,0 +1,52 @@
+{
+	"name": "DirkPersky/typo3-rte-ckeditor-fontawesome",
+	"version": "9.1.0",
+	"type": "typo3-cms-extension",
+	"description": "Adds the Fontawesome add-on to the CKEditor in TYPO3.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "CKEditor",
+    "fontawesome",
+    "icon",
+    "iconfont",
+    "rte"
+  ],
+  "homepage": "https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome",
+  "support": {
+		"issues": "https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/issues"
+	},
+  "authors": [
+    {
+      "name": "Dirk Persky",
+      "role": "Developer",
+      "homepage": "http://dp-dvelop.de"
+    }
+  ],
+  "license": ["GPL-3.0-or-later"],
+  "require": {
+    "typo3/cms-core": "~8.7.0||~9.2.0||dev-master"
+  },
+  "replace": {
+    "ckeditor-fontawesome": "self.version",
+    "typo3-ter/ckeditor-fontawesome": "self.version"
+  },
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin"
+	},
+  "scripts": {
+  },
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		}
+	],
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/Web"
+		}
+	}
+}
