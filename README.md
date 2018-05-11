@@ -39,4 +39,5 @@ We would appreciate any kind of feedback or ideas for further developments to ke
 - [GitHub](https://github.com/DirkPersky/rte-ckeditor-fontawesome)
 - [Homepage](https://web-kon.de)
 - [TYPO3.org](https://extensions.typo3.org/extension/rte_ckeditor_fontawesome/)
+- [Packagist.org (composer)](https://packagist.org/packages/dirkpersky/typo3-rte-ckeditor-fontawesome)
 - [Font Awesome](https://fontawesome.com)
