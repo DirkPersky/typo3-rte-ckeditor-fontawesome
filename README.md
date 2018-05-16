@@ -1,5 +1,6 @@
 # CKEditor Add-On "Fontawesome" for TYPO3
-This repository provides the add-on "Fontawesome" as a extension for TYPO3.
+This repository provides the add-on "Fontawesome" as a extension for TYPO3 CKEditor.
+It extends the `default` and` full` layout of the CKEditor. The `minimal` layout will not be expanded.
 
 ## TSConfig
 ### Switch back to Fontawesome 4
