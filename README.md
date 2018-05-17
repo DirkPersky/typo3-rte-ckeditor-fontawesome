@@ -1,6 +1,6 @@
 # CKEditor Add-On "Fontawesome" for TYPO3
 This repository provides the add-on "Fontawesome" as a extension for TYPO3 CKEditor.
-It extends the `default` and` full` layout of the CKEditor. The `minimal` layout will not be expanded.
+It extends the `default`,` full` and `minimal` layout of the CKEditor. If you write your own CKE-Preset pls have attention that you **not remove the Italic Button**
 
 ## TSConfig
 ### Switch back to Fontawesome 4
