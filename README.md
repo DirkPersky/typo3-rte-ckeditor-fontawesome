@@ -1,4 +1,9 @@
 # CKEditor Add-On "Fontawesome" for TYPO3
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/dirkpersky/9.99)
+[![Latest Stable Version](https://poser.pugx.org/dirkpersky/typo3-rte-ckeditor-fontawesome/v/stable)](https://packagist.org/packages/dirkpersky/typo3-rte-ckeditor-fontawesome)
+[![License](https://poser.pugx.org/dirkpersky/typo3-rte-ckeditor-fontawesome/license)](https://packagist.org/packages/dirkpersky/typo3-rte-ckeditor-fontawesome)
+
 This repository provides the add-on "Fontawesome" as a extension for TYPO3 CKEditor.
 It extends the `default`,` full` and `minimal` layout of the CKEditor. If you write your own CKE-Preset pls have attention that you **not remove the Italic Button**
 
