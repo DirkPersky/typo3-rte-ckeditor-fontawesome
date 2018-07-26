@@ -41,7 +41,7 @@ plugin.tx_ckeditor_fontawesome.css = https://maxcdn.bootstrapcdn.com/font-awesom
 We would appreciate any kind of feedback or ideas for further developments to keep improving the extension for your needs.
 
 ### Contact us
-- [E-Mail](mailto:d.persky@gutenberghaus.de)
+- [E-Mail](mailto:info@dp-dvelop.de)
 - [GitHub](https://github.com/DirkPersky/rte-ckeditor-fontawesome)
 - [Homepage](https://web-kon.de)
 - [TYPO3.org](https://extensions.typo3.org/extension/rte_ckeditor_fontawesome/)
