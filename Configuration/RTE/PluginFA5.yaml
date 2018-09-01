@@ -4,12 +4,12 @@ editor:
     ckeditor_fa5:
       resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa5/plugin.js?v=9.2.0"
 
-  allowedContent: true
-
   config:
     coreStyles_italic:
-      element : 'i'
-      overrides : 'span'
+      element: 'i'
+      overrides: 'span'
 
-    stylesSet:
-      # block level styles
+    extraAllowedContent:
+    - i(*)[*]
+    - span(*)[*]
+    - em(*)[*]
