@@ -15,10 +15,10 @@
         toolbar: 'insert',
         icon: this.path + 'icons/ckeditor-fa.png',
       });
-      CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=9.5.0');
-      CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=9.5.0');
+      CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=9.5.1');
+      CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=9.5.1');
 
-      editor.addContentsCss('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+      editor.addContentsCss('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
     }
   });
 })(TYPO3.jQuery);
