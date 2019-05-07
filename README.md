@@ -33,6 +33,22 @@ plugin.tx_ckeditor_fontawesome.css = {$path}
 # Include Fontawesome 4 from CDN
 plugin.tx_ckeditor_fontawesome.css = https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
 ```
+## Add Fotawesome in your own RTE Preset
+To add this Plug-In in your own RTE Config. Import the Config in your preset.
+```
+imports:
+    - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5.yaml" }
+```
+
+At the next step you need to extend your individual Toolbar-Config to add the Clickable Icon.
+```
+  ...
+  toolbar:
+        - [ 'Bold', 'Italic', .....]
+        ...
+        - [ 'ckeditor_fa5' ]
+        ...
+```
 
 ## ToDo:
 - Add FA-Icon in Content Headline Definition.
