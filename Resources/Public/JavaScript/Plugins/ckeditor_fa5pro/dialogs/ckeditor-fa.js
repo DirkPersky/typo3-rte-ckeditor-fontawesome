@@ -102,10 +102,10 @@ function searchFontawesomeIcon(el) {
                         fas: '#fontawesome-icon-body-solid',
                         far: '#fontawesome-icon-body-regular',
                         fab: '#fontawesome-icon-body-brand',
-                        fal: '#fontawesome-icon-body-regular',
+                        fal: '#fontawesome-icon-body-light',
                     };
                     $(idHolder[val]).addClass('in');
-                })
+                });
                 $('#cke-fa-type-far').prop('checked', true).trigger('click');
                 // Size Select Handler
                 var faSize = $('input[name="fa-size[]"]');

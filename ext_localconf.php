@@ -11,4 +11,4 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:rte_ckeditor_fon
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['full'] = 'EXT:rte_ckeditor_fontawesome/Configuration/RTE/FullFA5.yaml';
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['minimal'] = 'EXT:rte_ckeditor_fontawesome/Configuration/RTE/MinimalFA5.yaml';
 // Frontawesome V5-Pro
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['fa5pro'] = '/fileadmin/rte_ckeditor_fontawesome/FA5Pro.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['fa5pro'] = 'fileadmin/rte_ckeditor_fontawesome/FA5Pro.yaml';
