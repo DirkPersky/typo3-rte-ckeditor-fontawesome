@@ -1,0 +1,10 @@
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Full.yaml" }
+  - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5.yaml" }
+# Add configuration for the editor
+editor:
+  config:
+    # css definitions for the editor
+    contentsCss:
+      - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
+      - "https://use.fontawesome.com/releases/v5.8.1/css/all.css?v=9.5.1"

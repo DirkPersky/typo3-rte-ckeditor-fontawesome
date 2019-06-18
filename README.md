@@ -50,6 +50,34 @@ At the next step you need to extend your individual Toolbar-Config to add the Cl
         ...
 ```
 
+## Use Fontawesome Pro:
+first create the file `/fileadmin/rte_ckeditor_fontawesome/FA5Pro.yaml`.
+Copy the content from below and replace your `fontawesome pro` link.
+```
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Full.yaml" }
+  - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5.yaml" }
+# Add configuration for the editor
+editor:
+  config:
+    # css definitions for the editor
+    contentsCss:
+      - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
+      - "LINK TO FONTAWESOME PRO"
+```
+
+Add to your TSConfig:
+```
+// Zuweisen der Konfiguration im PageTSconfig
+RTE.default.preset = fa5pro
+```
+
+Add to your constant or clear this:
+```
+# Include Fontawesome 5-Pro CSS
+plugin.tx_ckeditor_fontawesome.css = "LINK TO FONTAWESOME PRO"
+```
+
 ## ToDo:
 - Add FA-Icon in Content Headline Definition.
 

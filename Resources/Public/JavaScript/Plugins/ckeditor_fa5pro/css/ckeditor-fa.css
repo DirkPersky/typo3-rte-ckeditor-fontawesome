@@ -1,0 +1,205 @@
+.cke_reset_all .fas:before,
+.cke_reset_all .fab:before,
+.cke_reset_all .fal:before,
+.cke_reset_all .far:before,
+.cke_reset_all .fa:before,
+.cke_reset_all .fa,
+.cke_reset_all .fab,
+.cke_reset_all .fal,
+.cke_reset_all .far,
+.cke_reset_all .fas {
+  color: inherit;
+}
+
+.ckeditor-fa-wrap {
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  color: #555;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+.fontawesome-icon-body {
+  display: none;
+}
+.fontawesome-icon-body.in {
+  display: block;
+}
+#ckeditor-fa-icons{
+  min-width: 100%;
+  height: 300px;
+  overflow: auto;
+
+  margin: -24px -10px -10px -10px;
+  width: auto;
+}
+
+#ckeditor-fa-icons-select {
+  white-space: normal;
+  text-align: center;
+}
+
+#ckeditor-fa-icons-select .page-header {
+  font-size: 2rem;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  display: block;
+
+  background-color: #1fa67a;
+  color: #fff;
+  text-shadow: 1px 1px 0px #333;
+  position: relative;
+}
+#ckeditor-fa-icons-select a.page-header {
+  cursor: pointer;
+}
+#ckeditor-fa-icons-select a.page-header {
+  margin-bottom: 10px;
+}
+#ckeditor-fa-icons-select a.page-header.in {
+  margin-bottom: 0;
+}
+#ckeditor-fa-icons-select .page-header .fa-angle-down,
+#ckeditor-fa-icons-select .page-header .fa-angle-up {
+  position: absolute;
+  right: 10px;
+
+  font-size: 20px;
+  color: white;
+  top: 50%;
+  margin-top: -10px;
+  line-height: 1;
+}
+#ckeditor-fa-icons-select .page-header.in .fa-angle-down{
+  display: none;
+}
+#ckeditor-fa-icons-select .page-header.in .fa-angle-up {
+  display: block;
+}
+
+#ckeditor-fa-icons-select #fa-options {
+  display: none;
+  border-bottom: 1px solid #333;
+}
+
+#ckeditor-fa-icons-select #fa-options.in {
+  display: flex;
+}
+#ckeditor-fa-icons-select .page-header .fa-angle-up {
+  display: none;
+}
+
+#ckeditor-fa-icons-select .fontawesome-icon-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover {
+  display: block;
+  max-width: 25%;
+  flex: 0 0 25%;
+
+  transition: all .4s ease-in-out;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover.off {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  min-height: 100%;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a.active,
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a:hover{
+  background-color: #1fa67a;
+  color: white;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a i {
+  text-align: center;
+  font-size: 1.7rem;
+  display: block;
+  padding-bottom: 7px;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-list .fa-hover a span.sr-only {
+  display: none;
+}
+#ckeditor-fa-icons-select * {
+  box-sizing: border-box;
+}
+
+#ckeditor-fa-icons-select .fontawesome-icon-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5px 10px 5px;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-options .col {
+  width: 33.3333%;
+  padding: 0 5px;
+}
+
+#ckeditor-fa-icons-select .fontawesome-icon-options .fa-button {
+  margin: 10px 0 0 0;
+  background-color:#1fa67a;
+  color: white;
+  border-radius: 3px;
+  padding: 7px 10px;
+  text-align: center;
+}
+
+#ckeditor-fa-icons-select .fontawesome-icon-options .fa-button.fa-button-small {
+  margin-top: 2px;
+}
+
+#ckeditor-fa-icons-select .fontawesome-icon-options input.hidden {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+#ckeditor-fa-icons-select .fontawesome-icon-options input:checked + .fa-button {
+  background-color:#72c3fc;
+}
+#ckeditor-fa-icons-select .fontawesome-icon-options .col label {
+  display: block;
+  width: 100%;
+}
+#ckeditor-fa-icons-select .fa-fw {
+   width: 1.28571429em;
+   text-align: center;
+ }
+#ckeditor-fa-icons-select .fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+#fontawesome-search {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 10px;
+}
+#fontawesome-search input[type="text"] {
+  width: 100%;
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  outline: none
+}

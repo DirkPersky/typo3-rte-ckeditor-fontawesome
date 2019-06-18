@@ -1,5 +1,5 @@
 imports:
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Minimal.yaml" } # Import the image plugin configuration
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Minimal.yaml" }
     - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5.yaml" }
 
 # Add configuration for the editor

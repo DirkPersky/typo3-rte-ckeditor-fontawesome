@@ -1,0 +1,15 @@
+# Register wordcount plugin for ckeditor
+editor:
+  externalPlugins:
+    ckeditor_fa5:
+      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa5pro/plugin.js?v=9.5.1"
+
+  config:
+    coreStyles_italic:
+      element: 'i'
+      overrides: 'span'
+
+    extraAllowedContent:
+    - i(*)[*]
+    - span(*)[*]
+    - em(*)[*]
