@@ -56,7 +56,7 @@ Copy the content from below and replace your `fontawesome pro` link.
 ```
 imports:
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Full.yaml" }
-  - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5.yaml" }
+  - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5Pro.yaml" }
 # Add configuration for the editor
 editor:
   config:
