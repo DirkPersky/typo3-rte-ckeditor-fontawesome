@@ -48,6 +48,19 @@ function searchFontawesomeIcon(el) {
     }, 400);
 }
 
+function loadCSS(href) {
+
+    var cssLink = $("<link>");
+    TYPO3.jQuery("#ckeditor-fa-icons-select").append(cssLink); //IE hack: append before setting href
+
+    cssLink.attr({
+        rel:  "stylesheet",
+        type: "text/css",
+        href: href
+    });
+}
+
+
 (function ($) {
 
     CKEDITOR.dialog.add('ckeditorFaDialog', function (editor) {
@@ -89,6 +102,9 @@ function searchFontawesomeIcon(el) {
                 },
             ],
             onLoad: function () {
+                editor.config.contentsCss.map(function(src, i){
+                    loadCSS(src);
+                })
                 // Toogle Options
                 $('a.page-header[href="#fa-options"]').on('click', function () {
                     $("#fa-options").toggleClass('in');
