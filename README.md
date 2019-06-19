@@ -50,7 +50,7 @@ At the next step you need to extend your individual Toolbar-Config to add the Cl
         ...
 ```
 
-## Use Fontawesome Pro:
+## Use Fontawesome Pro, or Custom Config:
 first create the file `/fileadmin/rte_ckeditor_fontawesome/FA5Pro.yaml`.
 Copy the content from below and replace your `fontawesome pro` link.
 ```
