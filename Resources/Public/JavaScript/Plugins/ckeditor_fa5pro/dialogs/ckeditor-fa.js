@@ -66,7 +66,7 @@ function loadCSS(href) {
     CKEDITOR.dialog.add('ckeditorFaDialog', function (editor) {
         function ckeditorFaGetIcons() {
             $.ajaxSetup({async: false});
-            var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa5pro') + 'dialogs/index.html?v=9.5.1');
+            var icons = $.get(CKEDITOR.plugins.getPath('ckeditor_fa5pro') + 'dialogs/index.html?v=9.5.2');
             $.ajaxSetup({async: true});
             if (icons.status == 200) {
                 return icons.responseText;
