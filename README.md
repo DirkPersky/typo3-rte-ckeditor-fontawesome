@@ -84,6 +84,10 @@ plugin.tx_ckeditor_fontawesome.css = "LINK TO FONTAWESOME PRO"
 ## Please give us feedback
 We would appreciate any kind of feedback or ideas for further developments to keep improving the extension for your needs.
 
+## Donate
+This is a private project.
+If you like it, please "Star" it in the right corner, or support me with a [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/dirkpersky)
+
 ### Contact us
 - [E-Mail](mailto:info@dp-dvelop.de)
 - [GitHub](https://github.com/DirkPersky/rte-ckeditor-fontawesome)
