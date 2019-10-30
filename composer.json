@@ -29,7 +29,6 @@
     "typo3/cms-core": "~8.7.0||~9.3.0||~9.5.0||dev-master"
   },
   "replace": {
-    "rte_ckeditor_fontawesome": "self.version",
     "typo3-ter/rte_ckeditor_fontawesome": "self.version"
   },
   "config": {
