@@ -48,5 +48,8 @@
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": ".Build/Web"
     }
+  },
+  "scripts": {
+    "zip": "grep -Po \"(?<='version' => ')([0-9]+.[0-9]+.[0-9]+)\" ext_emconf.php | xargs -I {version} sh -c 'git archive -v -o \"rte_ckeditor_fontawesome_version.zip\" version'"
   }
 }
