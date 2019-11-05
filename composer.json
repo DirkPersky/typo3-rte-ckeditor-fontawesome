@@ -26,7 +26,7 @@
     "GPL-3.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "~8.7.0||~9.3.0||~9.5.0||~10.0.0||dev-master"
+    "typo3/cms-core": "~8.7.0||~9.5.0||~10.0.0||dev-master"
   },
   "replace": {
     "typo3-ter/rte_ckeditor_fontawesome": "self.version"
@@ -34,8 +34,6 @@
   "config": {
     "vendor-dir": ".Build/vendor",
     "bin-dir": ".Build/bin"
-  },
-  "scripts": {
   },
   "repositories": [
     {
