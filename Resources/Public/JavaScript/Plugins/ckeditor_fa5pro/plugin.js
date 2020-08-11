@@ -6,17 +6,17 @@
     CKEDITOR.plugins.add('ckeditor_fa5pro', {
     icons: 'ckeditor-fa',
     init: function (editor) {
-      editor.addCommand('ckeditor_fa5pro', new CKEDITOR.dialogCommand('ckeditorFaDialog', {
-        allowedContent: 'i(!fa)',
-      }));
-      editor.ui.addButton('ckeditor_fa5pro', {
-        label: 'Insert FontAwesome icon',
-        command: 'ckeditor_fa5pro',
-        toolbar: 'insert',
-        icon: this.path + 'icons/ckeditor-fa.png',
-      });
-      CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=9.5.2');
-      CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=9.5.2');
+        editor.addCommand('ckeditor_fa5pro', new CKEDITOR.dialogCommand('ckeditorFaDialog', {
+            allowedContent: 'i(!fa)',
+        }));
+        editor.ui.addButton('ckeditor_fa5pro', {
+            label: 'Insert FontAwesome icon',
+            command: 'ckeditor_fa5pro',
+            toolbar: 'insert',
+            icon: this.path + 'icons/ckeditor-fa.png',
+        });
+        CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=10.1.0');
+        CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=10.1.0');
     }
   });
 })(TYPO3.jQuery);

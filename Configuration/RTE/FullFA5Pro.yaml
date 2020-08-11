@@ -7,4 +7,4 @@ editor:
     # css definitions for the editor
     contentsCss:
       - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
-      - "https://use.fontawesome.com/releases/v5.8.1/css/all.css?v=9.5.2"
+      - "https://use.fontawesome.com/releases/v5.14.0/css/all.css"
