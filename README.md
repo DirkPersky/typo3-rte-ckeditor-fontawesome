@@ -1,8 +1,8 @@
 # CKEditor Add-On "Fontawesome" for TYPO3
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/dirkpersky/9.99)
-[![Latest Stable Version](https://poser.pugx.org/dirkpersky/typo3-rte-ckeditor-fontawesome/v/stable)](https://packagist.org/packages/dirkpersky/typo3-rte-ckeditor-fontawesome)
-[![License](https://poser.pugx.org/dirkpersky/typo3-rte-ckeditor-fontawesome/license)](https://packagist.org/packages/dirkpersky/typo3-rte-ckeditor-fontawesome)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://www.paypal.me/dirkpersky)
+[![Latest Stable Version](https://img.shields.io/packagist/v/dirkpersky/typo3-rte-ckeditor-fontawesome?style=for-the-badge)](https://packagist.org/packages/dirkpersky/typo3-rte-ckeditor-fontawesome)
+[![TYPO3](https://img.shields.io/badge/TYPO3-rte__ckeditor__fontawesome-%23f49700?style=for-the-badge)](https://extensions.typo3.org/extension/rte_ckeditor_fontawesome/)
+[![License](https://img.shields.io/packagist/l/dirkpersky/typo3-rte-ckeditor-fontawesome?style=for-the-badge)](https://packagist.org/packages/dirkpersky/typo3-rte-ckeditor-fontawesome)
 
 This repository provides the add-on "Fontawesome" as a extension for TYPO3 CKEditor.
 It extends the `default`,` full` and `minimal` layout of the CKEditor. If you write your own CKE-Preset pls have attention that you **not remove the Italic Button**
@@ -88,7 +88,7 @@ We would appreciate any kind of feedback or ideas for further developments to ke
 You like this extension? Get something for me (surprise!) from my wishlist on [Amazon](https://www.amazon.de/hz/wishlist/ls/15L17XDFBEYFL/r) or [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/dirkpersky) the next pizza. Thanks a lot!
 
 ### Contact me
-- [E-Mail](mailto:info@dp-dvelop.de)
+- [E-Mail](mailto:info@dp-wired.de)
 - [GitHub](https://github.com/DirkPersky/rte-ckeditor-fontawesome)
 - [Homepage](https://web-kon.de)
 - [TYPO3.org](https://extensions.typo3.org/extension/rte_ckeditor_fontawesome/)
