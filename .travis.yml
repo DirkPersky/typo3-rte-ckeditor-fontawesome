@@ -35,5 +35,5 @@ jobs:
             composer global require helhum/ter-client
             # Upload
             echo "Uploading release ${TRAVIS_TAG} to TER\n"
-            $HOME/.composer/vendor/bin/ter-client upload rte_ckeditor_fontawesome . -u "$TYPO3_ORG_USERNAME" -p "$TYPO3_ORG_PASSWORD" -m "https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/releases/tag/${$TRAVIS_TAG}"
+            $HOME/.config/composer/vendor/bin/ter-client upload rte_ckeditor_fontawesome . -u "$TYPO3_ORG_USERNAME" -p "$TYPO3_ORG_PASSWORD" -m "More information on\n https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/releases"
           fi;
