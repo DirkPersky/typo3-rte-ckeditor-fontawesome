@@ -15,7 +15,7 @@ defined('TYPO3_MODE') || die();
 
 // Register Plugin and name Spaces
 ExtensionUtility::registerPlugin(
-    'DirkPersky.' . 'rte_ckeditor_fontawesome',
+    'RteCkeditorFontawesome',
     'CKEditor',
     'CKEditor'
 );
