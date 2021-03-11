@@ -7,7 +7,7 @@
     icons: 'ckeditor-fa',
     init: function (editor) {
         editor.addCommand('ckeditor_fa5pro', new CKEDITOR.dialogCommand('ckeditorFaDialog', {
-            allowedContent: 'i(!fa)',
+            allowedContent: 'i(!fa-*)',
         }));
         editor.ui.addButton('ckeditor_fa5pro', {
             label: 'Insert FontAwesome icon',
@@ -15,8 +15,8 @@
             toolbar: 'insert',
             icon: this.path + 'icons/ckeditor-fa.png',
         });
-        CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=10.1.0');
-        CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=10.1.0');
+        CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=10.2.0');
+        CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=10.2.0');
     }
   });
 })(TYPO3.jQuery);

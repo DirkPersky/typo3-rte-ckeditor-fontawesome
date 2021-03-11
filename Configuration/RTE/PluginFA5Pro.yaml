@@ -2,7 +2,7 @@
 editor:
   externalPlugins:
     ckeditor_fa5pro:
-      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa5pro/plugin.js?v=10.1.0"
+      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa5pro/plugin.js?v=10.2.0"
 
   config:
     coreStyles_italic:
