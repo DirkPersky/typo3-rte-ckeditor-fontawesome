@@ -9,13 +9,4 @@
  * @license    MIT
  */
 
-use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
-
 defined('TYPO3_MODE') || die();
-
-// Register Plugin and name Spaces
-ExtensionUtility::registerPlugin(
-    'RteCkeditorFontawesome',
-    'CKEditor',
-    'CKEditor'
-);
