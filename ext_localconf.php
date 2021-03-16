@@ -1,12 +1,10 @@
 <?php
 
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-
 defined('TYPO3_MODE') or die();
 
 (function () {
     // add TS Config
-    ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rte_ckeditor_fontawesome/Configuration/TSConfig/rte.txt">');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rte_ckeditor_fontawesome/Configuration/TSConfig/rte.txt">');
     // Fontawesome V4
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['defaultFA4'] = 'EXT:rte_ckeditor_fontawesome/Configuration/RTE/DefaultFA4.yaml';
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['fullFA4'] = 'EXT:rte_ckeditor_fontawesome/Configuration/RTE/FullFA4.yaml';
