@@ -200,6 +200,9 @@ function clear() {
                 if (dialog.getValueOf('font-awesome', 'size') != "No") cls += ' ' + dialog.getValueOf('font-awesome', 'size');
                 icon.setAttribute('class', dialog.getValueOf('font-awesome', 'faicon') + cls);
                 icon.setAttribute('aria-hidden', 'true');
+                // https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/issues/3
+                icon.setText(' ');
+                // add icon to CKE
                 editor.insertElement(icon);
             },
             onCancel: function () {
