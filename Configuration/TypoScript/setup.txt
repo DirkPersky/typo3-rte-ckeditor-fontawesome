@@ -6,3 +6,6 @@ page.includeCSS {
   ckefontawesome.external = 1
   ckefontawesome.if.isTrue = {$plugin.tx_ckeditor_fontawesome.loadCSS}
 }
+
+# If the i tag gets changed into an em tag classes get lost
+lib.parseFunc_RTE.tags.i >
