@@ -17,7 +17,10 @@
         });
         CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=10.2.0');
         CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=10.2.0');
-        CKEDITOR.document.appendStyleSheet('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+        // editor.addContentsCss('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+        windows.TestEditor = editor;
     }
   });
 })(TYPO3.jQuery);
