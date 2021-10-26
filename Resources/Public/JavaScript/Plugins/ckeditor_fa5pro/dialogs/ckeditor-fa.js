@@ -183,7 +183,9 @@ function clear() {
                                     this.getInputElement().setAttribute('readOnly', true);
                                     // load styles like fontawesome cdn
                                     editor.config.contentsCss.map(function (src, i) {
-                                        loadCSS(src);
+                                        if (src.indexOf('typo3/sysext') != -1) {
+                                            loadCSS(src);
+                                        }
                                     })
                                 },
                                 setup: function (widget) {
