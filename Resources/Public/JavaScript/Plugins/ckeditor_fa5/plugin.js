@@ -16,11 +16,8 @@
             icon: this.path + 'icons/ckeditor-fa.png',
         });
         CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=10.2.0');
-        CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=10.2.0');
-
-        // editor.addContentsCss('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
-
-        windows.TestEditor = editor;
+        // CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=10.2.0');
+        editor.addContentsCss('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
     }
   });
 })(TYPO3.jQuery);
