@@ -175,6 +175,7 @@ function clear() {
                                     this.getInputElement().setAttribute('readOnly', true);
                                     // load styles like fontawesome cdn
                                     editor.config.contentsCss.map(function (src, i) {
+                                        console.log(src);
                                         loadCSS(src);
                                     })
                                 },
