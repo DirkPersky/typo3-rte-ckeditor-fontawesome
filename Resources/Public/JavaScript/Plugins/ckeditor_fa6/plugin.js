@@ -15,8 +15,8 @@
                 toolbar: 'insert',
                 icon: this.path + 'icons/ckeditor-fa.png',
             });
-            CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=10.2.0');
-            CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=10.2.0');
+            CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=11.1.0');
+            CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=11.1.0');
 
             editor.addContentsCss('https://use.fontawesome.com/releases/v6.0.0/css/all.css');
         }
