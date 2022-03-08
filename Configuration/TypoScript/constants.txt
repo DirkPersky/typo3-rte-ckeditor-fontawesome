@@ -2,6 +2,6 @@ plugin.tx_ckeditor_fontawesome {
     # cat=ckeditor_fontawesome; type=boolean; label=Include Fontawesome CSSS (Default is yes)
 	loadCSS = 1
 
-	# cat=ckeditor_fontawesome; type=options[https://use.fontawesome.com/releases/v5.15.2css/all.css,https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css]; label= Path to CSS-File
-    css = https://use.fontawesome.com/releases/v5.15.2/css/all.css
+	# cat=ckeditor_fontawesome; type=options[https://use.fontawesome.com/releases/v6.0.0/css/all.css, https://use.fontawesome.com/releases/v5.15.2css/all.css,https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css]; label= Path to CSS-File
+    css = https://use.fontawesome.com/releases/v6.0.0/css/all.css
 }
