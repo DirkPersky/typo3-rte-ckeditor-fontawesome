@@ -1,0 +1,16 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Minimal.yaml" }
+    - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA6.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    toolbarGroups:
+      - { name: insert, groups: [ insert ] }
+
+    removeButtons:
+      - Image
+      - Table
+      - HorizontalRule
+      - SpecialChar

@@ -1,32 +1,3 @@
-.fab, .far, .fas {
-    display: inline-block;
-    font-size: 14px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: inherit;
-    cursor: pointer
-}
-
-.far, .fas {
-    font-family: "Font Awesome 5 Free"
-}
-
-.fab {
-    font-family: "Font Awesome 5 Brands"
-}
-
-.far {
-    font-weight: 400
-}
-
-.fas {
-    font-weight: 900
-}
-
-.fab:before, .far:before, .fas:before {
-    color: inherit
-}
 
 #ckeditor-fa-icons {
     text-align: center;
