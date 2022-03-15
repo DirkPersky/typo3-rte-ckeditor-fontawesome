@@ -1,4 +1,8 @@
 (function ($) {
+    var CKEDITOR_FA = {
+        version: '11.5.2'
+    };
+
     CKEDITOR.dtd.$removeEmpty.span = 0;
     CKEDITOR.dtd.$removeEmpty.em = 0;
     CKEDITOR.dtd.$removeEmpty.i = 0;
@@ -15,8 +19,8 @@
             toolbar: 'insert',
             icon: this.path + 'icons/ckeditor-fa.png',
         });
-        CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=11.5.2');
-        CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=11.5.2');
+        CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v='+CKEDITOR_FA.version);
+        CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v='+CKEDITOR_FA.version);
     }
   });
 })(TYPO3.jQuery);

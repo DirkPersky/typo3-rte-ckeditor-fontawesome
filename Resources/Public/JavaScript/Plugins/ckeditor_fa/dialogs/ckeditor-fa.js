@@ -3,18 +3,6 @@ if (typeof TYPO3.jQuery == 'undefined') {
     TYPO3.jQuery = jQuery;
 }
 
-function loadCSS(href) {
-
-    var cssLink = $("<link>");
-    cssLink.attr({
-        rel: "stylesheet",
-        type: "text/css",
-        href: href
-    });
-
-    TYPO3.jQuery(".fontawesomeClass").append(cssLink); //IE hack: append before setting href
-}
-
 function klick(el) {
 
     TYPO3.jQuery('#ckeditor-fa-icons a.active').removeClass('active');
@@ -153,10 +141,6 @@ function clear() {
                                 validate: CKEDITOR.dialog.validate.notEmpty("Select fontAwesome icon"),
                                 onLoad: function () {
                                     this.getInputElement().setAttribute('readOnly', true);
-                                    // load styles like fontawesome cdn
-                                    editor.config.contentsCss.map(function (src, i) {
-                                        loadCSS(src);
-                                    })
                                 },
                                 setup: function (widget) {
                                     this.setValue(widget.data.class != '' ? widget.data.class : '');
