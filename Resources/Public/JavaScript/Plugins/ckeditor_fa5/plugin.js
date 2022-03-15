@@ -1,7 +1,7 @@
 (function ($) {
     var CKEDITOR_FA = {
         cdn: 'https://use.fontawesome.com/releases/v5.15.4/css/all.css',
-        version: '11.5.2'
+        version: '11.5.3'
     };
 
     CKEDITOR.dtd.$removeEmpty.span = 0;

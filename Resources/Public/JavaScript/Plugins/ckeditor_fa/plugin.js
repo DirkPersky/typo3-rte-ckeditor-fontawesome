@@ -2,7 +2,7 @@
 
     var CKEDITOR_FA = {
         cdn: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
-        version: '11.5.2'
+        version: '11.5.3'
     };
 
     CKEDITOR.dtd.$removeEmpty.span = 0;
