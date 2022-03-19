@@ -6,7 +6,7 @@ editor:
 
   config:
     fontAwesome:
-      - "https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      - "https://use.fontawesome.com/releases/v6.1.0/css/all.css"
 
     coreStyles_italic:
       element: 'i'
