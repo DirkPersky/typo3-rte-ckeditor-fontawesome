@@ -1,7 +1,6 @@
 (function ($) {
     var CKEDITOR_FA = {
-        cdn: 'https://use.fontawesome.com/releases/v5.15.4/css/all.css',
-        version: '11.5.3'
+        version: '11.5.4'
     };
 
     CKEDITOR.dtd.$removeEmpty.span = 0;
@@ -22,9 +21,13 @@
         });
         CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v='+CKEDITOR_FA.version);
         CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v='+CKEDITOR_FA.version);
-
-        editor.addContentsCss(CKEDITOR_FA.cdn);
-        loadCSS(CKEDITOR_FA.cdn);
+        // add styles
+        if(typeof editor.config.fontAwesome != 'undefined'){
+            editor.config.fontAwesome.map(function (css_file) {
+                editor.addContentsCss(css_file);
+                loadCSS(css_file);
+            });
+        }
     }
   });
 
@@ -36,7 +39,7 @@
         var headID = document.getElementsByTagName('head')[0];
         var cssLink = document.createElement("link");
         cssLink.rel = "stylesheet";
-        cssLink.type =  "text/css";
+        cssLink.type = "text/css";
         cssLink.href = href;
         // add to dom
         headID.appendChild(cssLink);

@@ -53,6 +53,8 @@ At the next step you need to extend your individual Toolbar-Config to add the Cl
 ## Use Fontawesome Pro, or Custom Config:
 first create the file `/fileadmin/rte_ckeditor_fontawesome/FA5Pro.yaml`.
 Copy the content from below and replace your `fontawesome pro` link.
+
+![Update YAML](https://img.shields.io/badge/UPDATE-FA5%20PRO%20YAML-green?style=for-the-badge)
 ```
 imports:
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Full.yaml" }
@@ -60,9 +62,7 @@ imports:
 # Add configuration for the editor
 editor:
   config:
-    # css definitions for the editor
-    contentsCss:
-      - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
+    fontAwesome:
       - "LINK TO FONTAWESOME PRO"
 ```
 
