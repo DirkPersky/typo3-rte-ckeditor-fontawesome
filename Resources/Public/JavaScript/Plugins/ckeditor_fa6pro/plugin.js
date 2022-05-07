@@ -17,10 +17,10 @@
                 label: 'Insert FontAwesome icon',
                 command: 'ckeditor_fa',
                 toolbar: 'insert',
-                icon: this.path + 'icons/ckeditor-fa.png',
+                icon: this.path + 'icons/fa32x32.png',
             });
-            CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v='+CKEDITOR_FA.version);
-            CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v='+CKEDITOR_FA.version);
+            CKEDITOR.dialog.add('ckeditorFaDialog', this.path + 'dialogs/ckeditor-fa.js?v=' + CKEDITOR_FA.version);
+            CKEDITOR.document.appendStyleSheet(this.path + 'css/ckeditor-fa.css?v=' + CKEDITOR_FA.version);
             // add styles
             if(typeof editor.config.fontAwesome != 'undefined'){
                 editor.config.fontAwesome.map(function (css_file) {
@@ -39,7 +39,7 @@
         var headID = document.getElementsByTagName('head')[0];
         var cssLink = document.createElement("link");
         cssLink.rel = "stylesheet";
-        cssLink.type =  "text/css";
+        cssLink.type = "text/css";
         cssLink.href = href;
         // add to dom
         headID.appendChild(cssLink);

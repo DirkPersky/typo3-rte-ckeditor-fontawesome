@@ -2,11 +2,9 @@
 editor:
   externalPlugins:
     ckeditor_fa:
-      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa6/plugin.js?v=11.5.5"
+      resource: "EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa6pro/plugin.js?v=11.5.5"
 
   config:
-    fontAwesome:
-      - "https://use.fontawesome.com/releases/v6.1.0/css/all.css"
 
     coreStyles_italic:
       element: 'i'
