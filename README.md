@@ -78,6 +78,8 @@ Add to your constant or clear this:
 plugin.tx_ckeditor_fontawesome.css = "LINK TO FONTAWESOME PRO"
 ```
 
+## Fontawesome 6 Pro
+
 ## ToDo:
 - Add FA-Icon in Content Headline Definition.
 
