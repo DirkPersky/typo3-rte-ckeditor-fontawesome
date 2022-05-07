@@ -80,6 +80,23 @@ plugin.tx_ckeditor_fontawesome.css = "LINK TO FONTAWESOME PRO"
 
 ## Fontawesome 6 Pro
 
+Usually you have a RTE config in your sitepacke, if not create a new file.    
+* add PluginFA6Pro.yaml to imports 
+* add fontawesome URL or path to CSS (do not forget to add webfonts path as defined in css)
+
+```
+imports:
+- { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+- { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+- { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+- { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA6Pro.yaml" }
+
+editor:
+  config:
+    fontAwesome:
+      - "EXT:sitepackage/Resources/Public/Fonts/Css/fa6pro-all.css"
+```
+
 ## ToDo:
 - Add FA-Icon in Content Headline Definition.
 
