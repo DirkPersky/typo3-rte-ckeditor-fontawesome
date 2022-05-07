@@ -80,9 +80,10 @@ plugin.tx_ckeditor_fontawesome.css = "LINK TO FONTAWESOME PRO"
 
 ## Fontawesome 6 Pro
 
-Usually you have a RTE config in your sitepacke, if not create a new file.    
+Usually you have a RTE config in your sitepackage, if not create a new file.    
 * add PluginFA6Pro.yaml to imports 
-* add fontawesome URL or path to CSS (do not forget to add webfonts path as defined in css)
+* add fontAwesome URL or path to CSS
+* if icons are still missing: check webfonts path in the css and change if necessary
 
 ```
 imports:
@@ -96,6 +97,30 @@ editor:
     fontAwesome:
       - "EXT:sitepackage/Resources/Public/Fonts/Css/fa6pro-all.css"
 ```
+
+## TCA Selector for Fontawesome Icons
+
+You can use the Fontawesome SVG folder as source for a TCA Select field. 
+Change "fileFolder" to the path where your SVGs are located: 
+
+```
+'icon'  => [
+    'exclude' => 1,
+    'label'   => 'Icon',
+    'config'  => [
+        'type'                  => 'select',
+        'renderType'            => 'selectMultipleSideBySide',
+        'fileFolder'            => 'EXT:sitepackage/Resources/Public/Icons/Fontawesome/',
+        'fileFolder_extList'    => 'svg',
+        'fileFolder_recursions' => 0,
+        'size'                  => 5,
+        'minitems'              => 0,
+        'maxitems'              => 1,
+    ],
+],
+```
+
+With npm installation, the SVGs are located in `node_modules/@fortawesome/fontawesome-pro/svgs/light`
 
 ## ToDo:
 - Add FA-Icon in Content Headline Definition.
