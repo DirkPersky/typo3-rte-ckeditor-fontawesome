@@ -5,18 +5,26 @@ on:
     tags:
       - "v?[0-9]+.[0-9]+.[0-9]+"
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
 jobs:
   Ship-to-TER:
     name: 'Ship to TER'
     runs-on: ubuntu-latest
+    env:
+      TYPO3_API_TOKEN: ${{ secrets.TYPO3_API_TOKEN }}
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.4
+          extensions: intl, mbstring, json, zip, curl
+          tools: composer:v2
           coverage: none
 
       - name: "Extract tag, version from GITHUB_REF"
@@ -24,13 +32,14 @@ jobs:
         run: |
           echo "::set-output name=tag::$(echo $GITHUB_REF | sed -E -n 's#^refs/tags/(.*)$#\1#p')"
           echo "::set-output name=version::$(echo $GITHUB_REF | sed -E -n 's#^refs/tags/v?([0-9]+\.)([0-9]+\.)([0-9]+)#\1\2\3#p')"
+
       - name: Deploy to TER
         run: |
-          if [ -n "${{ secrets.TYPO3_ORG_USERNAME }}" ] && [ -n "${{ secrets.TYPO3_ORG_PASSWORD }}" ]; then
+          if [ -n "${{ secrets.TYPO3_API_TOKEN  }}" ]; then
             echo -e "Preparing upload of release ${{ steps.github-ref.outputs.version }} to TER\n";
-            # Install ter client
-            composer global require helhum/ter-client
+            # Install tailor
+            composer global require typo3/tailor --prefer-dist --no-progress
             # Upload
             echo "Uploading release ${{ steps.github-ref.outputs.version }} to TER\n"
-            $HOME/.composer/vendor/helhum/ter-client/ter-client upload rte_ckeditor_fontawesome . -u "${{ secrets.TYPO3_ORG_USERNAME }}" -p "${{ secrets.TYPO3_ORG_PASSWORD }}" -m "More information on\n https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/releases"
+            php ~/.composer/vendor/bin/tailor ter:publish --comment "More information on\n https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/releases" ${{ steps.github-ref.outputs.version }}
           fi;
