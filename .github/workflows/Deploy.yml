@@ -28,18 +28,17 @@ jobs:
           coverage: none
 
       - name: "Extract tag, version from GITHUB_REF"
-        id: "github-ref"
+        id: get-version
         run: |
-          echo "::set-output name=tag::$(echo $GITHUB_REF | sed -E -n 's#^refs/tags/(.*)$#\1#p')"
-          echo "::set-output name=version::$(echo $GITHUB_REF | sed -E -n 's#^refs/tags/v?([0-9]+\.)([0-9]+\.)([0-9]+)#\1\2\3#p')"
+          echo "version=$(echo $GITHUB_REF | sed -E -n 's#^refs/tags/v?([0-9]+\.)([0-9]+\.)([0-9]+)#\1\2\3#p')" >> $GITHUB_ENV
 
       - name: Deploy to TER
         run: |
           if [ -n "${{ secrets.TYPO3_API_TOKEN  }}" ]; then
-            echo -e "Preparing upload of release ${{ steps.github-ref.outputs.version }} to TER\n";
+            echo -e "Preparing upload of release ${{ env.version }} to TER\n";
             # Install tailor
             composer global require typo3/tailor --prefer-dist --no-progress
             # Upload
-            echo "Uploading release ${{ steps.github-ref.outputs.version }} to TER\n"
-            php ~/.composer/vendor/bin/tailor ter:publish --comment "More information on\n https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/releases" ${{ steps.github-ref.outputs.version }}
+            echo "Uploading release ${{ env.version }} to TER\n"
+            php ~/.composer/vendor/bin/tailor ter:publish --comment "More information on\n https://github.com/DirkPersky/typo3-rte-ckeditor-fontawesome/releases" ${{ env.version }}
           fi;
