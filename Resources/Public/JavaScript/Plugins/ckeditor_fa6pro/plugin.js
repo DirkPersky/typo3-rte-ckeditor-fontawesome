@@ -1,6 +1,6 @@
 (function ($) {
     var CKEDITOR_FA = {
-        version: '11.5.6'
+        version: '11.5.7'
     };
 
     CKEDITOR.dtd.$removeEmpty.span = 0;
