@@ -1,5 +1,8 @@
 <?php
-defined('TYPO3_MODE') || die();
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') || die();
 
 // Add Plugin Configs
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('rte_ckeditor_fontawesome', 'Configuration/TypoScript', 'CKEditor');
+ExtensionManagementUtility::addStaticFile('rte_ckeditor_fontawesome', 'Configuration/TypoScript', 'CKEditor');

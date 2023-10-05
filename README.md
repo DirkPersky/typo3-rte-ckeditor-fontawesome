@@ -8,15 +8,6 @@ This repository provides the add-on "Fontawesome" as a extension for TYPO3 CKEdi
 It extends the `default`,` full` and `minimal` layout of the CKEditor. If you write your own CKE-Preset pls have attention that you **not remove the Italic Button**
 
 ## TSConfig
-### Switch back to Fontawesome 4
-For the default template ot the CKE-Editor
-```
-RTE.default.preset = defaultFA4
-```
-For the full template of CKE-Editor
-```
-RTE.default.preset = fullFA4
-```
 
 ## Typo3 Constants:
 Disable CDN Integration in Frontend
@@ -28,16 +19,11 @@ Set alternativ CDN reference File
 plugin.tx_ckeditor_fontawesome.css = {$path}
 ```
 
-### Switch back Fontawesome 4
-```
-# Include Fontawesome 4 from CDN
-plugin.tx_ckeditor_fontawesome.css = https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-```
 ## Add Fotawesome in your own RTE Preset
 To add this Plug-In in your own RTE Config. Import the Config in your preset.
 ```
 imports:
-    - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5.yaml" }
+    - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA6.yaml" }
 ```
 
 At the next step you need to extend your individual Toolbar-Config to add the Clickable Icon.
@@ -58,7 +44,7 @@ Copy the content from below and replace your `fontawesome pro` link.
 ```
 imports:
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Full.yaml" }
-  - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA5Pro.yaml" }
+  - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA6Pro.yaml" }
 # Add configuration for the editor
 editor:
   config:

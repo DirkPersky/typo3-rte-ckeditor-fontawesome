@@ -8,12 +8,12 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
     'author' => 'Dirk Persky',
-    'author_email' => 'd.persky@gutenberghaus.de',
-    'version' => '11.5.7',
+    'author_email' => 'dirk.persky@gmail.de',
+    'version' => '12.4.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-11.5.99',
-            'rte_ckeditor' => '10.4.0-11.5.99',
+            'typo3' => '12.4.7-12.4.99',
+            'rte_ckeditor' => '12.4.1-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [

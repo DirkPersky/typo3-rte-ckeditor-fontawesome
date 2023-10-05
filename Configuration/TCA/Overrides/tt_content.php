@@ -9,4 +9,4 @@
  * @license    MIT
  */
 
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();

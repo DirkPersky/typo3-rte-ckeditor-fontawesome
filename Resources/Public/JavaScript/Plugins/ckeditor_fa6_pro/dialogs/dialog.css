@@ -1,0 +1,42 @@
+
+#faIcons i {
+    font-size: 2rem;
+    display: block;
+
+    pointer-events: none;
+    margin-bottom: .5rem;
+}
+
+#faIcons a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    position: relative;
+}
+
+#faIcons a:before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: calc(100% + 1.5rem);
+    height: calc(100% + 1.5rem);
+
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .2);
+    transition: all .3s ease-in-out;
+
+    opacity: 0;
+    visibility: hidden;
+
+    border-radius: .5rem;
+}
+
+#faIcons a:hover:before {
+    opacity: 1;
+    visibility: visible;
+}

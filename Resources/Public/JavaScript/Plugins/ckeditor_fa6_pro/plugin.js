@@ -29,7 +29,7 @@ export default class DPFontAwesome extends Core.Plugin {
             });
 
             // Insert a text into the editor after clicking the button.
-            this.listenTo(button, 'execute', () => this._openElementBrowser(editor, '/typo3conf/ext/rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa6/dialogs/index.html'));
+            this.listenTo(button, 'execute', () => this._openElementBrowser(editor, '/typo3conf/ext/rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa6_pro/dialogs/index.html'));
 
             return button;
         });
