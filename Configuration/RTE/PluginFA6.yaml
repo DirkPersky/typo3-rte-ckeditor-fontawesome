@@ -16,7 +16,10 @@ editor:
     debug: true
 
     htmlSupport:
-      allowEmpty: true
+      allowEmpty:
+        - 'i'
+        - 'span'
+        - 'em'
 
       allow:
         - name: 'i'
