@@ -36,10 +36,11 @@ At the next step you need to extend your individual Toolbar-Config to add the Cl
         ...
 ```
 
-## Fontawesome 6 Pro, or Custom Config
+## Fontawesome 6 Pro
 > 12LTS NOT WORKING YET
 
 ![Update YAML](https://img.shields.io/badge/UPDATE-FA6%20PRO%20YAML-green?style=for-the-badge)
+
 Usually you have a RTE config in your sitepackage, if not create a new file.
 * add PluginFA6Pro.yaml to imports
 * add fontAwesome URL or path to CSS
