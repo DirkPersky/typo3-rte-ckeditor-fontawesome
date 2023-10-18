@@ -72,7 +72,8 @@ editor:
 ```
 
 ## ToDo:
-- FAPRO Support
+
+- FA-PRO Support
 
 ## Please give us feedback
 We would appreciate any kind of feedback or ideas for further developments to keep improving the extension for your needs.
