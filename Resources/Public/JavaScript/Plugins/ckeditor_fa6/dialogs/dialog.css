@@ -13,6 +13,7 @@
     text-decoration: none;
 
     position: relative;
+    color: inherit;
 }
 
 #faIcons a:before {

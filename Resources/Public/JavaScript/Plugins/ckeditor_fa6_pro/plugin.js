@@ -29,14 +29,16 @@ export default class DPFontAwesome extends Core.Plugin {
             });
 
             // Insert a text into the editor after clicking the button.
-            this.listenTo(button, 'execute', () => this._openElementBrowser(editor, '/typo3conf/ext/rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa6_pro/dialogs/index.html'));
+            this.listenTo(button, 'execute', () => this._openElementBrowser(editor));
 
             return button;
         });
     }
 
-    _openElementBrowser(e, url) {
+    _openElementBrowser(e) {
         var self = this;
+        const url = new URL('dialogs/index.html', import.meta.url).pathname;
+
         var bc = new BroadcastChannel('fontawesome:selected');
         var modal = modalObject.advanced({
             type: modalObject.types.iframe,
