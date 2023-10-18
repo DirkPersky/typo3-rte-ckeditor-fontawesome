@@ -21,57 +21,32 @@ plugin.tx_ckeditor_fontawesome.css = {$path}
 
 ## Add Fotawesome in your own RTE Preset
 To add this Plug-In in your own RTE Config. Import the Config in your preset.
-```
+```yaml
 imports:
     - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA6.yaml" }
 ```
 
 At the next step you need to extend your individual Toolbar-Config to add the Clickable Icon.
-```
+```yaml
   ...
   toolbar:
         - [ 'Bold', 'Italic', .....]
         ...
-        - [ 'ckeditor_fa5' ]
+        - [ 'DPFontAwesome' ]
         ...
 ```
 
-## Use Fontawesome Pro, or Custom Config:
-first create the file `/fileadmin/rte_ckeditor_fontawesome/FA5Pro.yaml`.
-Copy the content from below and replace your `fontawesome pro` link.
-
-![Update YAML](https://img.shields.io/badge/UPDATE-FA5%20PRO%20YAML-green?style=for-the-badge)
-```
-imports:
-  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Full.yaml" }
-  - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/PluginFA6Pro.yaml" }
-# Add configuration for the editor
-editor:
-  config:
-    fontAwesome:
-      - "LINK TO FONTAWESOME PRO"
-```
-
-Add to your TSConfig:
-```
-// Zuweisen der Konfiguration im PageTSconfig
-RTE.default.preset = fa5pro
-```
-
-Add to your constant or clear this:
-```
-# Include Fontawesome 5-Pro CSS
-plugin.tx_ckeditor_fontawesome.css = "LINK TO FONTAWESOME PRO"
-```
-
 ## Fontawesome 6 Pro
+> 12LTS NOT WORKING YET
 
-Usually you have a RTE config in your sitepackage, if not create a new file.    
-* add PluginFA6Pro.yaml to imports 
+![Update YAML](https://img.shields.io/badge/UPDATE-FA6%20PRO%20YAML-green?style=for-the-badge)
+
+Usually you have a RTE config in your sitepackage, if not create a new file.
+* add PluginFA6Pro.yaml to imports
 * add fontAwesome URL or path to CSS
 * if icons are still missing: check webfonts path in the css and change if necessary
 
-```
+```yaml
 imports:
 - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
 - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
@@ -84,32 +59,20 @@ editor:
       - "EXT:sitepackage/Resources/Public/Fonts/Css/fa6pro-all.css"
 ```
 
-## TCA Selector for Fontawesome Icons
+Depends on your RTE Config maybe the toolbar button may not appear.
+Than you need to add it to your sets.
 
-You can use the Fontawesome SVG folder as source for a TCA Select field. 
-Change "fileFolder" to the path where your SVGs are located: 
-
+```yaml
+editor:
+  config:
+    toolbar:
+      ###YOUR_TOOLBARGRP###:
+        - '|'
+        - DPFontAwesome
 ```
-'icon'  => [
-    'exclude' => 1,
-    'label'   => 'Icon',
-    'config'  => [
-        'type'                  => 'select',
-        'renderType'            => 'selectMultipleSideBySide',
-        'fileFolder'            => 'EXT:sitepackage/Resources/Public/Icons/Fontawesome/',
-        'fileFolder_extList'    => 'svg',
-        'fileFolder_recursions' => 0,
-        'size'                  => 5,
-        'minitems'              => 0,
-        'maxitems'              => 1,
-    ],
-],
-```
-
-With npm installation, the SVGs are located in `node_modules/@fortawesome/fontawesome-pro/svgs/light`
 
 ## ToDo:
-- Add FA-Icon in Content Headline Definition.
+- FAPRO Support
 
 ## Please give us feedback
 We would appreciate any kind of feedback or ideas for further developments to keep improving the extension for your needs.

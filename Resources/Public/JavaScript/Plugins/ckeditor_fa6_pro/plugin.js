@@ -54,7 +54,6 @@ export default class DPFontAwesome extends Core.Plugin {
         });
 
         modal.addEventListener('typo3-modal-hide', e => {
-            console.log('close Broadcas');
             bc.close();
         });
     }

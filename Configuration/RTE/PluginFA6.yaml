@@ -13,8 +13,6 @@ editor:
       element: 'i'
       overrides: 'span'
 
-    debug: true
-
     htmlSupport:
       allowEmpty:
         - 'i'

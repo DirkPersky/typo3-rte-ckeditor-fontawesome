@@ -4,12 +4,20 @@ editor:
     importModules:
       - 'EXT:rte_ckeditor_fontawesome/Resources/Public/JavaScript/Plugins/ckeditor_fa6_pro/plugin.js'
 
+    toolbar:
+      items:
+        - '|'
+        - DPFontAwesome
+
     coreStyles_italic:
       element: 'i'
       overrides: 'span'
 
     htmlSupport:
-      allowEmpty: true
+      allowEmpty:
+        - 'i'
+        - 'span'
+        - 'em'
 
       allow:
         - name: 'i'
