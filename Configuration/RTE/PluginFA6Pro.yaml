@@ -9,9 +9,9 @@ editor:
         - '|'
         - DPFontAwesome
 
-    coreStyles_italic:
-      element: 'i'
-      overrides: 'span'
+    ui:
+      DPFontAwesome:
+        css: 'https://use.fontawesome.com/releases/v6.2.0/css/all.css'
 
     htmlSupport:
       allowEmpty:

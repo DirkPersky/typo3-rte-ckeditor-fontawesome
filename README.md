@@ -55,8 +55,9 @@ imports:
 
 editor:
   config:
-    fontAwesome:
-      - "EXT:sitepackage/Resources/Public/Fonts/Css/fa6pro-all.css"
+    ui:
+      DPFontAwesome:
+        css: 'LINK TO YOUR FONTAWESOME PRO CSS'
 ```
 
 Depends on your RTE Config maybe the toolbar button may not appear.

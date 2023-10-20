@@ -5,9 +5,11 @@ export default class DPFontAwesome extends Core.Plugin {
     static pluginName = 'DPFontAwesome';
 
     init() {
-        this._addFontawesomeCss();
-
         const editor = this.editor;
+        this.DPFontAwesome = editor.config.get('ui.DPFontAwesome');
+
+        this._addFontawesomeCss(document);
+
         // The button must be registered among the UI components of the editor
         // to be displayed in the toolbar.
         editor.ui.componentFactory.add(DPFontAwesome.pluginName, () => {
@@ -46,6 +48,11 @@ export default class DPFontAwesome extends Core.Plugin {
             content: url,
             size: modalObject.sizes.medium,
             callback: (t) => {
+                var iframe = t.querySelector('iframe');
+                iframe.addEventListener('load', (e) => {
+                    self._addFontawesomeCss(iframe.contentDocument);
+                }, true);
+
                 bc.onmessage = function (message) {
                     self.insertIcon(message.data);
                     t.hideModal();
@@ -58,15 +65,15 @@ export default class DPFontAwesome extends Core.Plugin {
         });
     }
 
-    _addFontawesomeCss() {
+    _addFontawesomeCss(HTMLDocumentNode) {
         // Get HTML head element
-        let head = document.getElementsByTagName('HEAD')[0];
+        let head = HTMLDocumentNode.getElementsByTagName('HEAD')[0];
         // Create new link Element
         let link = document.createElement('link');
         // set the attributes for link element
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://use.fontawesome.com/releases/v6.2.0/css/all.css';
+        link.href = this.DPFontAwesome.css;
         // Append link element to HTML head
         head.appendChild(link);
     }
