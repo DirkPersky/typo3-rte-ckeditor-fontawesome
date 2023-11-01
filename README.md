@@ -37,8 +37,6 @@ At the next step you need to extend your individual Toolbar-Config to add the Cl
 ```
 
 ## Fontawesome 6 Pro
-> 12LTS NOT WORKING YET
-
 ![Update YAML](https://img.shields.io/badge/UPDATE-FA6%20PRO%20YAML-green?style=for-the-badge)
 
 Usually you have a RTE config in your sitepackage, if not create a new file.
@@ -74,7 +72,7 @@ editor:
 
 ## ToDo:
 
-- FA-PRO Support
+
 
 ## Please give us feedback
 We would appreciate any kind of feedback or ideas for further developments to keep improving the extension for your needs.
