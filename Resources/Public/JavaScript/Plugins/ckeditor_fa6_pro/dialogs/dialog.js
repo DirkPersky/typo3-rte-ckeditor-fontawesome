@@ -56,12 +56,14 @@
         var faBorder = document.querySelector('[name="faBorder"]').value || null;
         var faSpin = document.querySelector('[name="faSpin"]').value || null;
         var faRotate = document.querySelector('[name="faRotate"]').value || null;
+        var faSharp = document.querySelector('[name="faSharp"]').value || null;
 
         if (faSize) selectedClass.push(faSize);
         if (faFw) selectedClass.push(faFw);
         if (faBorder) selectedClass.push(faBorder);
         if (faSpin) selectedClass.push(faSpin);
         if (faRotate) selectedClass.push(faRotate);
+        if (faSharp) selectedClass.push(faSharp);
 
         iconSection.querySelectorAll('a').forEach(link => {
             link.removeEventListener('click', klick)
